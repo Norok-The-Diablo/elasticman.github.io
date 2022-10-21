@@ -54,9 +54,7 @@
     */
     
 </style>	<script>
-        var strPageName = "Elastic Man",
-            strSectionName = 'Etcetera',
-            strSubSectionName = '';
+        var strPageName = "Elastic Man";
     </script>
 
 <iframe id="appPlayer" src="face.html" ></iframe>
@@ -69,7 +67,7 @@
     $(document).ready(function(){
         $("body").css("overflow-y","hidden");   
         $("#down-arrow").show();
-        window.addEventListener( 'resize', onWindowResize, true );
+        window.addEventListener( 'resize', onWindowResize, false );
         
         doIframeResize();
     
@@ -97,7 +95,7 @@
 
                 canScroll = false;
                 
-                $('html, body').animate({scrollTop: 500}, 700, function(){
+                $('html, body').animate({scrollTop: 1920}, 1080, function(){
                     canScroll = true;
                 });
             }
